@@ -29,15 +29,6 @@
     padding-right: 20px;
    }
   
- 
-   /*
-   header{
-    display: block;
-    padding-top: 3rem;
-    min-height: 6rem;
-    border-bottom: 2px solid #ce0606;
-   }
-   */
 
    header {
         display: flex;
@@ -174,7 +165,7 @@
         color: var(--white);
         font-weight: 800;
         line-height: 2rem;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         text-align: center;
     }
 
@@ -184,15 +175,18 @@
         background-color: var(--secondary);
         margin: 1.5rem auto;
     }
-
+   
     .program{
         padding: 1%;
         display: flex;
         gap:2%;
+        align-items: center;
+        justify-content: center;
         background: var(--primary);
         opacity: 0.7;
         background: #272a31;
         border: 1px solid #272a31;
+        margin: 13px;
     }
 
     .program .program-type{
@@ -213,15 +207,15 @@
     }
 
     .join-us{
-        width: 85%;
-        height: 8rem;
+        width: 80%;
+        height: 6rem;
         background: var(--secondary);
         color: var(--white);
         font-size: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 3rem auto;
+        margin: 2rem auto;
     }
 
     .join-us h2{
@@ -248,15 +242,15 @@
         position: relative;
         margin-top: -55px;
         left: 13px;
-        height: 150px;
-        width: 150px;
+        height: 130px;
+        width: 130px;
         object-fit: cover;
       }
 
     .athelet{
         padding-top: 3rem;
         display: flex;
-        gap:1.3rem;
+        gap:2rem;
         position: relative;
     }
 
@@ -266,7 +260,7 @@
     }
 
     .athelet .athlet-info{
-        margin-bottom: 0.5rem;
+        padding-top: 0.3rem;
     }
 
     .athelet .athlet-info h2{
@@ -288,19 +282,20 @@
 
     .athelet .athlet-info .acheivemnts{
         clear: both;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .see-more{
         display: flex;
         justify-content: center;
-        margin-top: 5rem;
-        gap:1rem;
+        margin: 5rem auto;
+        gap: 1rem;
         text-align: center;
         padding: 1rem;
-        width:100%;
+        width: 90%;
         background: var(--white);
-        border: 2px solid #d3d3d3
+        border: 2px solid #d3d3d3;
+        font-size: 1rem;
     }
 
     /* Desktop version min-width of 768px) */
