@@ -10,22 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main_style.css">
     <script src="./scripts/navbar.js" defer></script>
-    <script src="./scripts/dynamic-content.js" defer></script>
+   <script src="./scripts/dynamic-content.js" defer></script>
+    <!-- <script src="./scripts/test-drop-down.js" defer></script> -->
 </head>
 <body>
     <div class="home-wrapper">
         <div class="over-nav-bar">
             <ul class="over-nav-items">
-                <li> <a href="#"><img src="#" alt="facebook-icon"></a></li>
-                <li> <a href="#"><img src="#" alt="twitter-icon"></a></li>
+                <li> <a href="#"><img src="assets/icons/facebook.png" alt="facebook-icon"></a></li>
+                <li> <a href="#"><img src="assets/icons/twitter.svg" alt="twitter-icon"></a></li>
                 <li> <a href="#">English</a></li>
             </ul>
         </div>
         <header> 
-            <a href="#main"> <img src="./assets/images/logo-foot-ger.jpg" alt="logo"></a>
+            <a href="#"> <img src="./assets/images/logo-foot-ger.jpg" alt="logo"></a>
             <nav class="nav-bar">
                 <div class="hamburger"> 
-                    <a href="#" class="menuIcon"> <img src="./assets/icons/Union.png" alt="burgerIcon"> </a>
+                    <a href="#" class="menuIcon"> <img src="./assets/icons/humbergur-icon-2.png" alt="burgerIcon"> </a>
                     <a href="#" class="closeIcon"> <img src="./assets/icons/Icon-cancel.svg" alt="cancel icon"> </a>
                 </div>
                 <ul class="menu">
@@ -76,13 +77,29 @@
             <div id="athletes">
                
             </div>    
-            <div class="see-more">
+            <button id= "more" class="see-more">
                 MORE
                 <div class="down-arrow">
-                    <img src="#" alt="down-arrow">
+                    <img src="./assets/icons/down-arrow.svg" alt="down-arrow">
                 </div>
-            </div>
+            </button>
     </section>
+
+    <section class="partners">
+        <div class="main-program"> Partner</div>
+        <div class="line"></div>
+        <ul class="our-partners">
+            <li><img src="./assets/images/partners-tourism.webp" alt=""></li>
+            <li><img src="./assets/images/partners-Sofi Malt full.webp" alt=""></li>
+            <li><img src="./assets/images/partners-hayat.webp" alt=""></li>
+        </ul>
+    </section>
+    <footer>
+        <div class="foot-logo-container">
+            <img src="./assets/images/ger-black-and-white-Logo-white.png" alt=" the logo again">
+        </div>
+        <p class="foot-test">  2022 Great Ethiopian Run <br> Some rights reserved </p> 
+    </footer>
     
 </body>
 </html>

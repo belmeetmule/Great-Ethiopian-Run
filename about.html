@@ -6,24 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Great Ethiopian Run</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/main_style.css">
-<link rel="stylesheet" href="styles/about.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main_style.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <script src="./scripts/navbar.js" defer></script>
 </head>
 <body>
-    <main  class= 'about-bg'>
+    <div class="home-wrapper">
+        <div class="over-nav-bar">
+            <ul class="over-nav-items">
+                <li> <a href="#"><img src="assets/icons/facebook.png" alt="facebook-icon"></a></li>
+                <li> <a href="#"><img src="assets/icons/twitter.svg" alt="twitter-icon"></a></li>
+                <li> <a href="#">English</a></li>
+            </ul>
+        </div>
         <header> 
-            <nav class="nav">
-                <div class="humberger"> 
-                    <a href="#" class="menuIcon"> <img src="./assets/icons/Union.png" alt="burgerIcon"> </a>
+            <a href="./index.html"> <img src="./assets/images/logo-foot-ger.jpg" alt="logo"></a>
+            <nav class="nav-bar">
+                <div class="hamburger"> 
+                    <a href="#" class="menuIcon"> <img src="./assets/icons/humbergur-icon-2.png" alt="burgerIcon"> </a>
                     <a href="#" class="closeIcon"> <img src="./assets/icons/Icon-cancel.svg" alt="cancel icon"> </a>
                 </div>
                 <ul class="menu">
-                    <li class="menu-item">about</li>
-                    <li class="menu-item">program</li>
-                    <li class="menu-item"></li>
-                    <li class="menu-item"></li>
+                    <li> <a href="./about.html"class="menu-item">About</a></li>
+                    <li> <a href="./index.html#program"class="menu-item">Program </a></li>
+                    <li> <a href="#"class="menu-item">Join</a></li>
+                    <li> <a href="#"class="menu-item">Sponsor</a></li>
+                    <li> <a href="#"class="menu-item">News</a></li>
+                    <li> <a href="#"class="menu-item">GER Campagn</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,55 +49,61 @@
                 <a href="mailto:belmeetmule@gmail.com"> belmeetmule@gmail.com </a>
             </div>
         </section>
-    </main>
+    </div>
 
-    <section class="featured-athlets-section">
-        <div class="main-program featured-athlets">
-            <h2> Great Ethiopian Run 2022 Logo</h2>
-        </div>
+
+    <section class="about-ger">
+        <h2> About Great Ethiopian Run </h2>
         <div class="line"></div>
+        <p class="description">
+            Great Ethiopian Run Plc. is an event management company specializing in mass-participation running events.Since its inception, Great Ethiopian Run has staged over 100 races in different parts of Ethiopia. In recent years our focus has been on taking mass-participation races to all corners of Ethiopia; developing capacity in the office and event teams that are staffed by Ethiopians; and working with sponsors on a range of publicity campaigns. 
+        </p>
         <div class="ger-logo">
                 <img src="assets/images/ger-about-logo.png" alt="">
         </div>
-        
-    <section class="past-editions">
-                <h2>
-                    See the past Great Ethiopian Run
-                </h2>
-                <div class="line"> </div>
-                <p> Take a look at the last two Great Ethiopian run that took place in 2021 and 2011</p>
-                <div class="past-events">
-                    <div class="past-egr-container">
-                        <img src="./assets/images/past-1.jpg" class="past-egr" alt="past-egr-1">
-                        <div class="centered">
-                            <h3 class=""> 2021</h3>
-                            <p class=""> 5KM women run</p>
-                        </div>
-                    </div>
-                    <div class="past-egr-container">
-                        <img src="./assets/images/past-2.jpg" class="past-egr" alt="past-egr-1">
-                        <div class="centered">
-                            <h3 class="centered"> 2018</h3>
-                            <p class="centered"> 10KM  Elite Atheletes run, Addis Ababa</p>
-                        </div>
+    </section>
+    <hr>
+    <section class="about-ger past-editions">
+            <h2>
+                See the past Great Ethiopian Run
+            </h2>
+            <div class="line"> </div>
+            <p class="description"> Take a look at the last two Great Ethiopian run that took place in 2017 and 2011</p>
+            <div class="past-events">
+                <div class="past-egr-container">
+                    <img src="./assets/images/ger-Solomon-Barega-2017.webp" class="past-egr" alt="past-egr-1">
+                    <div class="centered">
+                        <h3> 2017</h3>
+                        <p> 10KM  Elite Atheletes run, Addis Ababa</p>
                     </div>
                 </div>
+                <div class="past-egr-container">
+                    <img src="./assets/images/ger-Solomon-Barega-2.webp" class="past-egr" alt="past-egr-1">
+                    <div class="centered">
+                        <h3> 2020</h3>
+                        <p> 5KM women run </p>
+                    </div>
+                </div>
+            </div>
     </section>
+    
     
     <section class="partners">
         <div class="main-program"> Partner</div>
         <div class="line"></div>
         <ul class="our-partners">
             <li><img src="./assets/images/partners-tourism.webp" alt=""></li>
-            <li><img src="./assets/images/partners-hayat.webp" alt=""></li>
             <li><img src="./assets/images/partners-Sofi Malt full.webp" alt=""></li>
+            <li><img src="./assets/images/partners-hayat.webp" alt=""></li>
+            
         </ul>
     </section>
-    <footer>
-        <div class="foot-logo-container">
+   
+    <footer class="about-foot">
+        <div class="foot-logo-container about-foot-logo">
             <img src="./assets/images/logo-foot-ger.jpg" alt=" the logo again">
         </div>
-        <p class="foot-test">  2022 Great Ethiopian Run <br> Some rights reserved </p> 
+        <p class="foot-test about-foot-copyright">  2022 Great Ethiopian Run <br> Some rights reserved </p> 
     </footer>
     
 </body>
