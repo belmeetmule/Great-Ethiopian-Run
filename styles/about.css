@@ -20,30 +20,40 @@
 }
 
 .past-events{
-    display: flex;
-    flex-direction: column;
-    gap:5px;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
+
 .past-egr-container{
-    position: relative;
-    text-align: center;
-    color: white;
+  width: 85%;
+  height: 250px;
+  position: relative;
+  text-align: center;
+  color: white;
+  flex: 50%;
 }
 
 .past-egr-container img{
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    height: 250px;
+    filter: hue-rotate(90deg) blur(1px) opacity(50%);
 }
 
 .centered {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-
-    transform: translate(-50%, -50%);
-    background: pink;
-    background-position:cover;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 
   .partners{
     background: #272A31;
@@ -75,4 +85,136 @@
     color: #272A31;
   }
 
- 
+  .date-place{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .date-place a {
+    text-align: center;
+    color: #272A31;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    /* display: inline-block; */
+    margin: 5px auto;
+}
+
+.about-ger {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+section.about-ger h2 {
+color: #272A31;
+font-size: 1.8rem;
+margin: 3rem auto 0.5rem auto;
+}
+
+
+.about-ger p.description {
+  color: #272A31;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+hr{
+padding:0;
+}
+
+
+footer>div,
+footer>p{
+display: block;
+}
+
+.partners{
+  display: block;
+}
+
+@media only screen and (min-width: 768px){
+.about-ger {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.partners{
+  display: none;
+}
+
+footer{
+  display: block;
+}
+footer div,
+footer p{
+  display: block;
+}
+
+section.about-ger h2 {
+  color: #272A31;
+  font-size: 1.8rem;
+  margin: 3rem auto 0.5rem auto;
+}
+
+
+.about-ger p.description {
+    color: #272A31;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+
+hr{
+  padding:0;
+}
+
+.past-events{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+}
+
+footer{
+  background-color: var(--primary);
+  margin-top: 5rem;
+}
+
+footer .foot-test{
+  color: var(--white);
+}
+footer>div,
+footer>p{
+  display: block;
+}
+
+.past-egr-container{
+    flex: 50%;
+}
+
+.past-egr-container img {
+  height:100%;
+}
+
+.about-foot{
+  margin-top: 30px auto;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-foot-logo img{
+  width: 100px;
+}
+
+.about-foot-copyright{
+  font-size: 20px;
+  color: #272A31;
+}
+} 

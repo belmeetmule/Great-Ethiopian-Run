@@ -28,7 +28,16 @@
     padding-left: 20px;
     padding-right: 20px;
    }
-  
+
+   .partners,
+   footer>div,
+   footer>p{
+    display: none;
+   }
+
+   .partners .main-program{
+    color: var(--third);
+   }
 
    header {
         display: flex;
@@ -88,16 +97,33 @@
         border: none;
       }
       
-      .hamburger {
-        display: block;
-        position: fixed;
-        z-index: 100;
-        top: 3rem;
-        right: 90%;
-        padding: 4px;
-        cursor: pointer;
-    }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 2rem;
+    right: 90%;
+    padding: 4px;
+    cursor: pointer;
+    padding-left: 5px;
+    left: -40px;
+}
+
+.hamburger .menuIcon img,
+.hamburger .closeIcon img {
+    width: 50px;
+    margin-left: 50px;
+}
       .closeIcon {
         display: none;
       }
@@ -194,6 +220,10 @@
         gap:1%;
         color: var(--secondary);
         align-items: center;
+        flex-basis: calc(100% / 2);
+    }
+    .program .program-icon{
+        flex-basis: calc(100% / 2);
     }
 
     .program .program-type .program-title{
@@ -201,9 +231,17 @@
     }
 
     .program .program-description{
-        color: var(--third);
+        color: var(--white);
         font-weight: normal;
         font-size: 0.8rem;
+    }
+
+    .program:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: all 0.3s linear;
+        border: 2px solid #fff;
+        border-radius: 5px;
     }
 
     .join-us{
@@ -324,11 +362,48 @@
         color: var(--white);
     }
 
+   .partners,
+   footer>div,
+   footer>p{
+    display: block;
+   }
+
+   footer{
+    margin-top: 30px auto;
+    padding: 25px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--third);
+  }
+
+  .foot-logo-container img{
+    width: 100px;
+  }
+  
+  footer .foot-test{
+    font-size: 20px;
+    color: #272A31;
+  }
+
+  .partners{
+    background: #272A31;
+    padding-top: 40px;
+  }
+  .our-partners{
+    list-style: none;
+    display: flex;
+    gap:5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100px;
+        height: 4rem;
         width: 100%;
         background-color: #fff;
         position: fixed;
@@ -345,9 +420,48 @@
         font-size: 15px;
         line-height: 20px;
         margin: 2rem 1rem;
-        color: #344563;
         text-decoration: none;
+        padding: 5px;
+        color: var(--primary);
     }
+
+    .menu-item:hover {
+        background-color: var(--secondary);
+        border-radius: 5px;
+        border: #EC5242;
+        color: #fff;
+        cursor: pointer;
+        transform: scale(1.07);
+        transition: all 0.5s linear;
+      }
+
+      ul.menu li:nth-child(1) a:hover {
+        background-color: var(--secondary);
+        border-radius: 5px;
+        border: #EC5242;
+        color: #fff;
+        transform: scale(1.03);
+        transition: all 0.5s linear;
+      }
+
+      ul.menu li:nth-child(6) a:hover {
+        border: #EC5242;
+        color: #fff;
+        transform: scale(1.03);
+        transition: all 0.5 linear;
+      }
+
+      ul.menu li:nth-child(1) a {
+        color: var(--secondary);
+    }
+
+    ul.menu li:nth-child(6) a {
+        border: 3px solid var(--secondary);
+        padding: 5px;
+        margin-left: 5px;
+        color: var(--secondary);
+    }
+
     .hamburger,
     .menuIcon,
     .closeIcon {
@@ -384,10 +498,10 @@
       font-size: 15px;
       line-height: 20px;
       margin: 2rem 1rem;
-      color: #344563;
       text-decoration: none;
-
     }
+
+    
 
     .home,
     .program-section,
@@ -395,9 +509,51 @@
     {
         padding-left: 15%;
         padding-right: 15%;
+        margin: auto auto;
     }
 
     .home{
         padding-top: 17%;
+    }
+
+    #programs{
+        display: flex;
+    }
+    .program{
+        flex-direction: column;
+        margin:1px;
+        gap:15px;
+        padding: 10px;
+    }
+
+    .program .program-type{
+        flex-direction: column;
+    }
+
+    .program .program-description{
+        text-align: center;
+    }
+
+    .featured-athlets-section {
+        background: var(--third);
+    }
+
+    .see-more{
+        display: none;
+    }
+
+    #athletes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #athletes>.athelet{
+        flex: 50%;
+        width: 100%;
+    }
+
+    .over-nav-bar .over-nav-items li a img{
+        width: 15px;
     }
 }  
