@@ -34,43 +34,43 @@ const frame= 'assets/images/chess.jpg';
 // js file
 const athletes = [
   {
-    atheletPic: 'assets/images/haile-images.jpg',
+    atheletPic: 'assets/images/ger-fa-haile.jpg',
     athletName: 'Haile G/Sillase',
     athletProfile:'Long distance runner',
     athletAchivements: 
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, suscipit dolor odio culpa reiciendis, tempora facilis labore, aperiam adipisci dolores dolore autem consequuntur possimus. Modi ipsa dolorem quia ipsum laborum.'
   },
   {
-    atheletPic: 'assets/images/haile-images.jpg',
+    atheletPic: 'assets/images/ger-fa-tirunesh.jpg',
     athletName: 'Tirunesh Dibaba',
     athletProfile:'Long distance runner',
     athletAchivements: 
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, suscipit dolor odio culpa reiciendis, tempora facilis labore, aperiam adipisci dolores dolore autem consequuntur possimus. Modi ipsa dolorem quia ipsum laborum.'
   },
   {
-    atheletPic: './assets/icons/program_icon_01.png',
-    athletName: 'Press briefing',
+    atheletPic: 'assets/images/ger-fa-kenenisa.jpg',
+    athletName: 'Kenenisa Bekele',
     athletProfile:'Long distance runner',
     athletAchivements: 
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, suscipit dolor odio culpa reiciendis, tempora facilis labore, aperiam adipisci dolores dolore autem consequuntur possimus. Modi ipsa dolorem quia ipsum laborum.'
   },
   {
-    atheletPic: './assets/icons/program_icon_01.png',
-    athletName: 'Press briefing',
+    atheletPic: 'assets/images/ger-fa-meseret.jpg',
+    athletName: 'Meseret Defar',
     athletProfile:'Long distance runner',
     athletAchivements: 
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, suscipit dolor odio culpa reiciendis, tempora facilis labore, aperiam adipisci dolores dolore autem consequuntur possimus. Modi ipsa dolorem quia ipsum laborum.'
   },
   {
-    atheletPic: './assets/icons/program_icon_01.png',
-    athletName: 'Press briefing',
+    atheletPic: 'assets/images/ger-fa-sileshi.jpg',
+    athletName: 'Sileshi Sihin',
     athletProfile:'Long distance runner',
     athletAchivements: 
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, suscipit dolor odio culpa reiciendis, tempora facilis labore, aperiam adipisci dolores dolore autem consequuntur possimus. Modi ipsa dolorem quia ipsum laborum.'
   },
   {
-    atheletPic: './assets/icons/program_icon_01.png',
-    athletName: 'Press briefing',
+    atheletPic: 'assets/images/ger-fa-genzebe.jpg',
+    athletName: 'Genezebe Dibaba',
     athletProfile:'Long distance runner',
     athletAchivements: 
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, suscipit dolor odio culpa reiciendis, tempora facilis labore, aperiam adipisci dolores dolore autem consequuntur possimus. Modi ipsa dolorem quia ipsum laborum.'
@@ -124,7 +124,7 @@ function addProgram(pro) {
   programs.appendChild(program);
 }
 
-function addAthlet(pro) {
+function addAthlet(pro, i) {
   const athletes = document.querySelector('#athletes');
 
     /* athelet*/
@@ -185,20 +185,20 @@ function addAthlet(pro) {
   athletInfo.appendChild(hrBar);
   athletInfo.appendChild(acheivements);
   
-  participant.appendChild(profilePic)
-  participant.appendChild(athletInfo)
+  participant.appendChild(profilePic);
+  participant.appendChild(athletInfo);
   athletes.appendChild(participant);
 }
 
 function addProgramSection() {
-  for (let i = 0; i < projects.length; i += 1) {
+  for (let i = 0; i < projects.length; i = i+ 1) {
     addProgram(projects[i]);
   }
 }
 
 function addParticipant() {
-  for (let i = 0; i < 2; i += 1) {
-    addAthlet(athletes[i]);
+  for (let i = 0; i < athletes.length; i = i+ 1) {
+    addAthlet(athletes[i], i);
   }
 }
 
