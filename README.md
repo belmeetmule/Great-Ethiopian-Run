@@ -25,6 +25,7 @@ This website is developed to promote the great ethiopian run that is going to be
 
 - HTML
 - CSS
+- java script
 
 ## Technologies used: 
 - linters
@@ -94,7 +95,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thank You [Microverse](www.microverse.org) team that produced the template of this project.
+- Thank You [Cindy Shin](https://www.behance.net/adagio07) for the template of this project.
+- Thank You [Microverse](www.microverse.org) team and the reviewers for all the supports.
 - Thanks to everyone who will get time to check this code and suggest any [issues](https://github.com/belmeetmule/hello-world/issues)
 
 ## 📝 License
