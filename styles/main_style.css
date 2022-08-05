@@ -8,9 +8,9 @@
 
 :root {
   --primary: #272a31;
-  --secondary: #ec5242;
+  --secondary: #df5141;
   --third: #d3d3d3;
-  --error: #ce0606;
+  --error: #e2e05c;
   --success: #009070;
   --white: #fff;
 }
@@ -243,20 +243,17 @@ a:-webkit-any-link {
   border-radius: 5px;
 }
 
-.join-us {
-  width: 80%;
+a.join-us {
+  text-decoration: none;
+  width: 70%;
   height: 6rem;
   background: var(--secondary);
-  color: var(--white);
-  font-size: 1rem;
+  color: var(--third);
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2rem auto;
-}
-
-.join-us h2 {
-  text-align: center;
 }
 
 /* featured athlets */
@@ -363,7 +360,8 @@ a:-webkit-any-link {
 
   .over-nav-bar .over-nav-items li a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--third);
+    font-size: 1rem;
   }
 
   .partners,
@@ -423,17 +421,7 @@ a:-webkit-any-link {
     padding-left: 15%;
   }
 
-  .menu-item:hover {
-    background-color: var(--secondary);
-    border-radius: 5px;
-    border: #ec5242;
-    color: #fff;
-    cursor: pointer;
-    transform: scale(1.07);
-    transition: all 0.5s linear;
-  }
-
-  .nav-bar .menu .menu-item {
+  .nav-bar ul.menu li a.menu-item {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -442,6 +430,16 @@ a:-webkit-any-link {
     text-decoration: none;
     padding: 5px;
     color: var(--primary);
+  }
+
+  .nav-bar ul.menu li a.menu-item:hover {
+    background-color: var(--secondary);
+    border-radius: 5px;
+    border: #ec5242;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 0.5s linear;
   }
 
   ul.menu li:nth-child(1) a {
@@ -534,8 +532,15 @@ a:-webkit-any-link {
     text-align: center;
   }
 
-  .featured-athlets-section {
-    background: var(--third);
+  a.join-us {
+    text-decoration: underline;
+    color: var(--third);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin: 2rem auto;
   }
 
   .see-more {
