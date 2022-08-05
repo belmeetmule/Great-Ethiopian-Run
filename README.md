@@ -19,7 +19,7 @@ This website is developed to promote the great ethiopian run that is going to be
 
 ## Video about the project
 
-- To watch a dem, click on [Video Link](https://www.loom.com/share/9f5129e9131746c28516a5299c49afee)
+- To watch a dem, click on [Video Link](https://www.loom.com/share/02759bcaf8074f1b8d2bd1c387845429)
 
 ## Built With
 
