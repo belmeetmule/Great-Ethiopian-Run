@@ -15,11 +15,11 @@ This website is developed to promote the great ethiopian run that is going to be
 
 ## Live Demo
 
-[Live Demo Link](https://belmeetmule.github.io/Capstone/)
+- To see the website live, click [Live Demo Link](https://belmeetmule.github.io/Capstone/)
 
 ## Video about the project
 
-[Video about the project Link](https://belmeetmule.github.io/Portfolio/)
+- To watch a dem, click on [Video Link](https://www.loom.com/share/9f5129e9131746c28516a5299c49afee)
 
 ## Built With
 
