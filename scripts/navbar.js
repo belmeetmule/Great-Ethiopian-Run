@@ -9,7 +9,6 @@ function toggleMenu() {
     closeIcon.style.display = 'none';
     menuIcon.style.display = 'block';
     navHeader.style.position = 'fixed';
-
   } else {
     menu.classList.add('showMenu');
     closeIcon.style.display = 'block';
