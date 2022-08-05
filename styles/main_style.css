@@ -37,6 +37,14 @@ footer > p {
   display: none;
 }
 
+.main-program {
+  color: var(--white);
+  font-weight: 800;
+  line-height: 2rem;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
 .partners .main-program {
   color: var(--third);
 }
@@ -82,7 +90,7 @@ header > a {
   transform: translateY(0);
 }
 
-.menu-item {
+ul.menu .menu-item {
   display: block;
   margin: 2rem 4rem;
   font-size: 1.8rem;
@@ -90,18 +98,12 @@ header > a {
   text-decoration: none;
 }
 
-.menuItem:hover {
+ul.menu .menu-item:hover {
   text-decoration: underline;
 }
 
 .menuIcon {
   border: none;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 a:-webkit-any-link {
@@ -131,8 +133,6 @@ a:-webkit-any-link {
   display: none;
 }
 
-
-
 /* Main page */
 .home h2,
 .home h1 {
@@ -158,7 +158,6 @@ a:-webkit-any-link {
   background-size: 100% 100%;
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .home .primary-text {
@@ -195,14 +194,6 @@ a:-webkit-any-link {
   background: #111 url('./../assets/images/main-bg.png') repeat;
 }
 
-.main-program {
-  color: var(--white);
-  font-weight: 800;
-  line-height: 2rem;
-  font-size: 2.2rem;
-  text-align: center;
-}
-
 .line {
   width: 5rem;
   height: 3px;
@@ -218,7 +209,6 @@ a:-webkit-any-link {
   justify-content: center;
   background: var(--primary);
   opacity: 0.7;
-  background: #272a31;
   border: 1px solid #272a31;
   margin: 13px;
 }
@@ -367,6 +357,10 @@ a:-webkit-any-link {
     padding-right: 30px;
   }
 
+  header > a {
+    display: block;
+  }
+
   .over-nav-bar .over-nav-items li a {
     text-decoration: none;
     color: var(--white);
@@ -379,13 +373,17 @@ a:-webkit-any-link {
   }
 
   footer {
-    margin-top: 30px auto;
     padding: 25px;
     display: flex;
     gap: 15px;
     align-items: center;
     justify-content: space-around;
     background-color: var(--third);
+  }
+
+  header a img {
+    width: 95px;
+    display: block;
   }
 
   .foot-logo-container img {
@@ -425,6 +423,16 @@ a:-webkit-any-link {
     padding-left: 15%;
   }
 
+  .menu-item:hover {
+    background-color: var(--secondary);
+    border-radius: 5px;
+    border: #ec5242;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 0.5s linear;
+  }
+
   .nav-bar .menu .menu-item {
     font-style: normal;
     font-weight: 500;
@@ -436,14 +444,15 @@ a:-webkit-any-link {
     color: var(--primary);
   }
 
-  .menu-item:hover {
-    background-color: var(--secondary);
-    border-radius: 5px;
-    border: #ec5242;
-    color: #fff;
-    cursor: pointer;
-    transform: scale(1.07);
-    transition: all 0.5s linear;
+  ul.menu li:nth-child(1) a {
+    color: var(--secondary);
+  }
+
+  ul.menu li:nth-child(6) a {
+    border: 3px solid var(--secondary);
+    padding: 5px;
+    margin-left: 5px;
+    color: var(--secondary);
   }
 
   ul.menu li:nth-child(1) a:hover {
@@ -459,33 +468,13 @@ a:-webkit-any-link {
     border: #ec5242;
     color: #fff;
     transform: scale(1.03);
-    transition: all 0.5 linear;
-  }
-
-  ul.menu li:nth-child(1) a {
-    color: var(--secondary);
-  }
-
-  ul.menu li:nth-child(6) a {
-    border: 3px solid var(--secondary);
-    padding: 5px;
-    margin-left: 5px;
-    color: var(--secondary);
+    transition: all 0.5s linear;
   }
 
   .hamburger,
   .menuIcon,
   .closeIcon {
     display: none;
-  }
-
-  header > a {
-    display: block;
-  }
-
-  header a img {
-    width: 95px;
-    display: block;
   }
 
   .menu {
@@ -513,8 +502,6 @@ a:-webkit-any-link {
     margin: 2rem 1rem;
     text-decoration: none;
   }
-
-
 
   .home,
   .program-section,
